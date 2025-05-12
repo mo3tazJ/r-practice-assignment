@@ -6,5 +6,5 @@ weightmedian <- function(directory, day) {
     dat <- rbind(dat, read.csv(files_list[i]))
   }
   day_weight <- dat[dat$Day == day, "Weight"]
-  weightmedian <- median(day_weight, na.rm = TRUE)
+  median(day_weight, na.rm = TRUE)
 }
